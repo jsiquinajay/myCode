@@ -1,0 +1,2 @@
+introduccion de las preguntas y que se obtenga las respuestas, el horario de atencion y si esta fuera de hhorario y le respueta no esta que guarde la pregunta es decir que tengan una opcion donde guarde tempotalmente las preguntas
+ mientras alguien se las responde

@@ -1,0 +1,217 @@
+body{ /*fondo del index o fondo de toda la pagina*/
+	/*background:#fff;*/
+	font: 13px Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	/*background:#CFEDF9;*/		
+	/*imagen, fondo del index*/								
+	background: url(../fonts/fondoindex.jpg) no-repeat center center fixed;
+	background-size: cover;
+	margin: 0;
+	color:#4D4D4D;
+	font-size/* */:/**/small;
+	font-size: /**/small;
+	text-align: center;
+
+}
+
+/* Root = Horizontal, Secondary = Vertical */
+/*menu*/
+ul#menu {
+  background: url('../fonts/cell-blue.jpg');/*fondo de las opciones del menu*/
+  ba
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+/*  width: 500px;*/ /*For KHTML*/
+/*width:220px;*/
+  list-style: none;
+  height: 22px;/*ancho del borde*/
+  border:1px solid #eee;
+  padding-bottom:7px; /*ancho de cada opcion o boton*/
+  /*centrado del Menu*/
+  margin: 0 auto;
+  width: 384px; /*aca se mide el acho para que se ajuste a las opciones*/
+}
+
+ul#menu li {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  float: left; /*For Gecko*/
+  display: inline;
+  list-style: none;
+  position: relative; 
+  height: 24px; /*configuracion de ancho de la sombra*/
+ 
+}
+ul#menu li{
+	padding-bottom:5px; /*ancho de la sombra al pasar el raton*/
+	
+}
+ul#menu li:hover{
+	/*background:#999933; /*fondo al pasar el raton encima*/
+	background: url('../fonts/cell-grey.jpg');
+}
+
+ul#menu  ul {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  width: 160px;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 29px;
+  left: 10px;
+  /*Fondo de la opciones desplegables o submenus*/
+  background: url('../fonts/cell-grey.jpg');
+  /*background: #eee;*/
+  border: none;
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  filter:alpha(opacity=80);
+}
+
+ul#menu ul:after /*From IE 7 lack of compliance*/{
+  clear: both;
+  display: block;
+  font: 1px/0px serif;
+  content: ".";
+  height: 0;
+  visibility: hidden;
+}
+
+ul#menu ul li {
+  width: 160px;
+  float: left; /*For IE 7 lack of compliance*/
+  display: block !important;
+  display: inline; /*For IE*/
+}
+
+/* Root Menu */
+ul#menu a {
+  padding: 5px 15px 5px;
+  float: none !important; /*For Opera*/
+  float: left; /*For IE*/
+  display: block;
+  color: #9fcf21;
+  text-decoration: none;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  font-weight:bold;
+/*  border-right:1px solid #818181;*/
+  text-decoration: none;
+  height: auto !important;
+  height: 1%; /*For IE*/
+}
+
+/* Root Menu Hover Persistence */
+/*color de los submenus*/
+ul#menu a:hover,
+ul#menu li:hover a,
+ul#menu li.iehover a {
+color: #CC0000; /*color rojo*/
+/*color: #000000;*/
+
+}
+
+/* 2nd Menu */
+ul#menu li:hover li a,
+ul#menu li.iehover li a {
+  float: none;
+  border:none;
+}
+
+/* 2nd Menu Hover Persistence */
+/*cambia de color en las opciones depleglabes del menu*/
+ul#menu li:hover li a:hover,
+ul#menu li:hover li:hover a,
+ul#menu li.iehover li a:hover,
+ul#menu li.iehover li.iehover a {
+  background:#ddd;
+  /*background: url('../fonts/cell-grey.jpg');*/
+  color: #003300;
+ }
+
+/* 3rd Menu */
+ul#menu li:hover li:hover li a,
+ul#menu li.iehover li.iehover li a {
+  background: #EEE;
+  color: #666;
+}
+
+/* 3rd Menu Hover Persistence */
+
+ul#menu li:hover li:hover li a:hover,
+ul#menu li:hover li:hover li:hover a,
+ul#menu li.iehover li.iehover li a:hover,
+ul#menu li.iehover li.iehover li.iehover a {
+background:#ddd;
+  color: #FFF;
+}
+
+/* 4th Menu */
+ul#menu li:hover li:hover li:hover li a,
+ul#menu li.iehover li.iehover li.iehover li a {
+background:#ddd;
+  color: #666;
+}
+
+/* 4th Menu Hover */
+ul#menu li:hover li:hover li:hover li a:hover,
+ul#menu li.iehover li.iehover li.iehover li a:hover {
+  background: #CCC;
+  color: #FFF;
+}
+
+ul#menu ul ul,
+ul#menu ul ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 160px;
+}
+
+/* Do Not Move - Must Come Before display:block for Gecko */
+ul#menu li:hover ul ul,
+ul#menu li:hover ul ul ul,
+ul#menu li.iehover ul ul,
+ul#menu li.iehover ul ul ul {
+  display: none;
+}
+/*permite desplegar los submenus*/
+ul#menu li:hover ul,
+ul#menu ul li:hover ul,
+ul#menu ul ul li:hover ul,
+ul#menu li.iehover ul,
+ul#menu ul li.iehover ul,
+ul#menu ul ul li.iehover ul {
+  display: block;
+}
+ul#menu .selected{/*color de los titulos de las opciones*/
+	color: #000000; /*inicia con color negro*/
+}
+
+table.tablaheader th {
+	background: url('../fonts/cell-blue.jpg');
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+/*css para tabla*/
+table.tablados th {
+	background: url('../images/cell-blue.jpg');
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+table.tablados td {
+	background:#EEEEEE;
+	border-width: 0px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #E5E5E5;
+}
